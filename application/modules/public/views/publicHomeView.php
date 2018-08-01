@@ -1,3 +1,6 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -46,7 +49,7 @@
                 <li class="active"><a href="#main-header">Inicio</a></li>
                 <li class=""><a href="#feature">Quienes somos</a></li>
                 <li class=""><a href="#service">Servicios</a></li>
-                <li class=""><a href="<?php echo base_url() ?>LyrController/login">Login</a></li>
+                <li class=""><a href="<?php echo base_url() ?>Auth/">Login</a></li>
                 <!--<li class=""><a href="#testimonial">Nuestros clientes</a></li>-->
                 <!-- =======================================================
                 <li class=""><a href="#blog">Blog</a></li>======================================================= -->

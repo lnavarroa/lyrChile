@@ -7,4 +7,9 @@ class Welcome extends MX_Controller {
 	{
 		$this->load->view('welcome_message');
 	}
+
+	public function roadmap()
+	{
+		$this->load->view('roadmap');
+	}
 }
