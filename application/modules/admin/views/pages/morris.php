@@ -14,19 +14,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <title>SB Admin 2 - Bootstrap Admin Theme</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url() ?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
-    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="<?php echo base_url() ?>assets/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="<?php echo base_url() ?>assets/dist/css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
-    <link href="../vendor/morrisjs/morris.css" rel="stylesheet">
+    <link href="<?php echo base_url() ?>assets/vendor/morrisjs/morris.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url() ?>assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -250,12 +250,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i>Mi Perfil</a>
                         </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i>Configuración</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="<?php echo base_url() ?>admin/AdminController/login"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -269,56 +269,56 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <ul class="nav" id="side-menu">
                         <li class="sidebar-search">
                             <div class="input-group custom-search-form">
-                                <input type="text" class="form-control" placeholder="Search...">
+                                <input type="text" class="form-control" placeholder="Buscar...">
                                 <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </span>
+                                    <button class="btn btn-default" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
                             </div>
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="<?php echo base_url() ?>admin/AdminController/index"><i class="fa fa-dashboard fa-fw"></i>Panel Control</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>Gráficos<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="flot.html">Flot Charts</a>
+                                    <a href="<?php echo base_url() ?>admin/AdminController/flot">Gráfico Flot</a>
                                 </li>
                                 <li>
-                                    <a href="morris.html">Morris.js Charts</a>
+                                    <a href="<?php echo base_url() ?>admin/AdminController/morris">Gráfico Morris.js</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
+                            <a href="<?php echo base_url() ?>admin/AdminController/tables"><i class="fa fa-table fa-fw"></i>Tablas</a>
                         </li>
                         <li>
-                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                            <a href="<?php echo base_url() ?>admin/AdminController/forms"><i class="fa fa-edit fa-fw"></i>Formularios</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="panels-wells.html">Panels and Wells</a>
+                                    <a href="<?php echo base_url() ?>admin/AdminController/panelswells">Paneles y Wells</a>
                                 </li>
                                 <li>
-                                    <a href="buttons.html">Buttons</a>
+                                    <a href="<?php echo base_url() ?>admin/AdminController/buttons">Botones</a>
                                 </li>
                                 <li>
-                                    <a href="notifications.html">Notifications</a>
+                                    <a href="<?php echo base_url() ?>admin/AdminController/notifications">Notificaciones</a>
                                 </li>
                                 <li>
-                                    <a href="typography.html">Typography</a>
+                                    <a href="<?php echo base_url() ?>admin/AdminController/typography">Tipografía</a>
                                 </li>
                                 <li>
-                                    <a href="icons.html"> Icons</a>
+                                    <a href="<?php echo base_url() ?>admin/AdminController/icons">Iconos</a>
                                 </li>
                                 <li>
-                                    <a href="grid.html">Grid</a>
+                                    <a href="<?php echo base_url() ?>admin/AdminController/grid">Cuadrícula</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -353,14 +353,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
-                        <li>
-                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
+                        <li class="active">
+                            <a href="#"><i class="fa fa-files-o fa-fw"></i>Páginas Ejemplo<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="blank.html">Blank Page</a>
+                                    <a class="active" href="<?php echo base_url() ?>admin/AdminController/blank">Página en Blanco</a>
                                 </li>
                                 <li>
-                                    <a href="login.html">Login Page</a>
+                                    <a href="<?php echo base_url() ?>admin/AdminController/login">Login</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -461,21 +461,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/vendor/metisMenu/metisMenu.min.js"></script>
 
     <!-- Morris Charts JavaScript -->
-    <script src="../vendor/raphael/raphael.min.js"></script>
-    <script src="../vendor/morrisjs/morris.min.js"></script>
-    <script src="../data/morris-data.js"></script>
+    <script src="<?php echo base_url() ?>assets/vendor/raphael/raphael.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/vendor/morrisjs/morris.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/data/morris-data.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="../dist/js/sb-admin-2.js"></script>
+    <script src="<?php echo base_url() ?>assets/dist/js/sb-admin-2.js"></script>
 
 </body>
 

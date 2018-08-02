@@ -25,6 +25,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $config['base_url'] = 'http://localhost/lyrChile/public_html/';
 
+//'http://localhost/lyrChile/public_html/';
+//'https://www.lyrChile.cl/';
+
 /*
 |--------------------------------------------------------------------------
 | Index File

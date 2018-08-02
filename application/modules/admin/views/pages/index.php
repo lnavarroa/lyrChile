@@ -11,7 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <title>SB Admin</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url() ?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -46,11 +46,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <span class="icon-bar">navigation1</span>
+                    <span class="icon-bar">navigation2</span>
+                    <span class="icon-bar">navigation3</span>
                 </button>
-                <a class="navbar-brand" href="index.php">SB Admin v2.0</a>
+                <a class="navbar-brand" href="<?php echo base_url() ?>admin/AdminController">LYR Admin</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -250,12 +250,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i>Mi Perfil</a>
                         </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i>Configuración</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i>Cerrar sesión</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -269,7 +269,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <ul class="nav" id="side-menu">
                         <li class="sidebar-search">
                             <div class="input-group custom-search-form">
-                                <input type="text" class="form-control" placeholder="Search...">
+                                <input type="text" class="form-control" placeholder="Buscar...">
                                 <span class="input-group-btn">
                                 <button class="btn btn-default" type="button">
                                     <i class="fa fa-search"></i>
@@ -279,46 +279,46 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="<?php echo base_url() ?>admin/AdminController/"><i class="fa fa-dashboard fa-fw"></i>Panel Control</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>Gráficos<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="flot.html">Flot Charts</a>
+                                    <a href="<?php echo base_url() ?>admin/AdminController/flot">Gráficos Flot</a>
                                 </li>
                                 <li>
-                                    <a href="morris.html">Morris.js Charts</a>
+                                    <a href="<?php echo base_url() ?>admin/AdminController/morris">Gráficos Morris.js</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
+                            <a href="<?php echo base_url() ?>admin/AdminController/tables"><i class="fa fa-table fa-fw"></i>Tablas</a>
                         </li>
                         <li>
-                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                            <a href="<?php echo base_url() ?>admin/AdminController/forms"><i class="fa fa-edit fa-fw"></i>Formularios</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="panels-wells.html">Panels and Wells</a>
+                                    <a href="<?php echo base_url() ?>admin/AdminController/panelswells">Paneles y Wells</a>
                                 </li>
                                 <li>
-                                    <a href="buttons.html">Buttons</a>
+                                    <a href="<?php echo base_url() ?>admin/AdminController/buttons">Botones</a>
                                 </li>
                                 <li>
-                                    <a href="notifications.html">Notifications</a>
+                                    <a href="<?php echo base_url() ?>admin/AdminController/notifications">Notificaciones</a>
                                 </li>
                                 <li>
-                                    <a href="typography.html">Typography</a>
+                                    <a href="<?php echo base_url() ?>admin/AdminController/typography">Tipografía</a>
                                 </li>
                                 <li>
-                                    <a href="icons.html"> Icons</a>
+                                    <a href="<?php echo base_url() ?>admin/AdminController/icons">Iconos</a>
                                 </li>
                                 <li>
-                                    <a href="grid.html">Grid</a>
+                                    <a href="<?php echo base_url() ?>admin/AdminController/grid">Cuadrícula</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -354,13 +354,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-files-o fa-fw"></i>Páginas Ejemplo<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="blank.html">Blank Page</a>
+                                    <a href="<?php echo base_url() ?>admin/AdminController/blank">Página en blanco</a>
                                 </li>
                                 <li>
-                                    <a href="login.html">Login Page</a>
+                                    <a href="<?php echo base_url() ?>admin/AdminController/login">Login</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -375,7 +375,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Dashboard</h1>
+                    <h1 class="page-header">Panel De Control</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -390,13 +390,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge">26</div>
-                                    <div>New Comments!</div>
+                                    <div>Nuevos Commentarios!</div>
                                 </div>
                             </div>
                         </div>
                         <a href="#">
                             <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
+                                <span class="pull-left">Ver Detalles</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                 <div class="clearfix"></div>
                             </div>
@@ -412,13 +412,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge">12</div>
-                                    <div>New Tasks!</div>
+                                    <div>Nuevas Tareas</div>
                                 </div>
                             </div>
                         </div>
                         <a href="#">
                             <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
+                                <span class="pull-left">Ver Detalles</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                 <div class="clearfix"></div>
                             </div>
@@ -434,13 +434,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge">124</div>
-                                    <div>New Orders!</div>
+                                    <div>Nuevas Ordenes</div>
                                 </div>
                             </div>
                         </div>
                         <a href="#">
                             <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
+                                <span class="pull-left">Ver Detalles</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                 <div class="clearfix"></div>
                             </div>
@@ -456,13 +456,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge">13</div>
-                                    <div>Support Tickets!</div>
+                                    <div>Tickets de Soporte</div>
                                 </div>
                             </div>
                         </div>
                         <a href="#">
                             <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
+                                <span class="pull-left">Ver Detalles</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                 <div class="clearfix"></div>
                             </div>
@@ -475,19 +475,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="col-lg-8">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i> Area Chart Example
+                            <i class="fa fa-bar-chart-o fa-fw"></i>Ejemplo de Gráfico de Área
                             <div class="pull-right">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                                        Actions
+                                        Acciones
                                         <span class="caret"></span>
                                     </button>
                                     <ul class="dropdown-menu pull-right" role="menu">
-                                        <li><a href="#">Action</a>
+                                        <li><a href="#">Acción</a>
                                         </li>
-                                        <li><a href="#">Another action</a>
+                                        <li><a href="#">Otra acción</a>
                                         </li>
-                                        <li><a href="#">Something else here</a>
+                                        <li><a href="#">Algo aquí</a>
                                         </li>
                                         <li class="divider"></li>
                                         <li><a href="#">Separated link</a>
@@ -505,7 +505,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <!-- /.panel -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i> Bar Chart Example
+                            <i class="fa fa-bar-chart-o fa-fw"></i>Ejemplo Gráfico de Barra
                             <div class="pull-right">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
@@ -535,9 +535,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <thead>
                                                 <tr>
                                                     <th>#</th>
-                                                    <th>Date</th>
-                                                    <th>Time</th>
-                                                    <th>Amount</th>
+                                                    <th>Fecha</th>
+                                                    <th>Hora</th>
+                                                    <th>Monto</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -607,7 +607,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <!-- /.panel -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-clock-o fa-fw"></i> Responsive Timeline
+                            <i class="fa fa-clock-o fa-fw"></i>Línea temporal
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
@@ -722,70 +722,70 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="col-lg-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-bell fa-fw"></i> Notifications Panel
+                            <i class="fa fa-bell fa-fw"></i>Panel de Notificationes
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <div class="list-group">
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-comment fa-fw"></i> New Comment
-                                    <span class="pull-right text-muted small"><em>4 minutes ago</em>
+                                    <i class="fa fa-comment fa-fw"></i>Nuevo Comentario
+                                    <span class="pull-right text-muted small"><em>4 minutos atrás</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                                    <span class="pull-right text-muted small"><em>12 minutes ago</em>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 nuevos seguidores
+                                    <span class="pull-right text-muted small"><em>12 minutos atrás</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
-                                    <span class="pull-right text-muted small"><em>27 minutes ago</em>
+                                    <i class="fa fa-envelope fa-fw"></i> Mensaje Enviado
+                                    <span class="pull-right text-muted small"><em>27 minutos atrás</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-tasks fa-fw"></i> New Task
-                                    <span class="pull-right text-muted small"><em>43 minutes ago</em>
+                                    <i class="fa fa-tasks fa-fw"></i>Nueva Tarea
+                                    <span class="pull-right text-muted small"><em>43 minutos atrás</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <i class="fa fa-upload fa-fw"></i>Servidor Reiniciado
                                     <span class="pull-right text-muted small"><em>11:32 AM</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-bolt fa-fw"></i> Server Crashed!
+                                    <i class="fa fa-bolt fa-fw"></i>Servidor Caído
                                     <span class="pull-right text-muted small"><em>11:13 AM</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-warning fa-fw"></i> Server Not Responding
+                                    <i class="fa fa-warning fa-fw"></i>Servidor no responde
                                     <span class="pull-right text-muted small"><em>10:57 AM</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-shopping-cart fa-fw"></i> New Order Placed
+                                    <i class="fa fa-shopping-cart fa-fw"></i>Nueva orden 
                                     <span class="pull-right text-muted small"><em>9:49 AM</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-money fa-fw"></i> Payment Received
-                                    <span class="pull-right text-muted small"><em>Yesterday</em>
+                                    <i class="fa fa-money fa-fw"></i>Pago Recivido
+                                    <span class="pull-right text-muted small"><em>Ayer</em>
                                     </span>
                                 </a>
                             </div>
                             <!-- /.list-group -->
-                            <a href="#" class="btn btn-default btn-block">View All Alerts</a>
+                            <a href="#" class="btn btn-default btn-block">Ver todas las alertas</a>
                         </div>
                         <!-- /.panel-body -->
                     </div>
                     <!-- /.panel -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i> Donut Chart Example
+                            <i class="fa fa-bar-chart-o fa-fw"></i>Ejemplo Gráfico Donut
                         </div>
                         <div class="panel-body">
                             <div id="morris-donut-chart"></div>
-                            <a href="#" class="btn btn-default btn-block">View Details</a>
+                            <a href="#" class="btn btn-default btn-block">Ver Detalles</a>
                         </div>
                         <!-- /.panel-body -->
                     </div>
@@ -800,28 +800,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <ul class="dropdown-menu slidedown">
                                     <li>
                                         <a href="#">
-                                            <i class="fa fa-refresh fa-fw"></i> Refresh
+                                            <i class="fa fa-refresh fa-fw"></i>Actualizar
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <i class="fa fa-check-circle fa-fw"></i> Available
+                                            <i class="fa fa-check-circle fa-fw"></i>Disponible
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <i class="fa fa-times fa-fw"></i> Busy
+                                            <i class="fa fa-times fa-fw"></i>Ocupado
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <i class="fa fa-clock-o fa-fw"></i> Away
+                                            <i class="fa fa-clock-o fa-fw"></i>Lejos
                                         </a>
                                     </li>
                                     <li class="divider"></li>
                                     <li>
                                         <a href="#">
-                                            <i class="fa fa-sign-out fa-fw"></i> Sign Out
+                                            <i class="fa fa-sign-out fa-fw"></i>Salir del chat
                                         </a>
                                     </li>
                                 </ul>
@@ -899,7 +899,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
                                 <span class="input-group-btn">
                                     <button class="btn btn-warning btn-sm" id="btn-chat">
-                                        Send
+                                        Enviar
                                     </button>
                                 </span>
                             </div>
@@ -918,21 +918,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/vendor/metisMenu/metisMenu.min.js"></script>
 
     <!-- Morris Charts JavaScript -->
-    <script src="../vendor/raphael/raphael.min.js"></script>
-    <script src="../vendor/morrisjs/morris.min.js"></script>
-    <script src="../data/morris-data.js"></script>
+    <script src="<?php echo base_url() ?>assets/vendor/raphael/raphael.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/vendor/morrisjs/morris.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/data/morris-data.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="../dist/js/sb-admin-2.js"></script>
+    <script src="<?php echo base_url() ?>assets/dist/js/sb-admin-2.js"></script>
 
 </body>
 
